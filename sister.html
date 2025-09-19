@@ -14,59 +14,40 @@
       color: #fff;
       text-align: center;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
+      padding: 2rem 1rem;
     }
 
-    .image-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.7;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 20px;
-      max-width: 90%;
-    }
-
-    .overlay h1 {
+    h1 {
       font-family: 'Pacifico', cursive;
       font-size: 2.2rem;
       margin-bottom: 1rem;
-      color: #fff;
     }
 
-    .overlay p {
+    p {
       font-size: 1rem;
       line-height: 1.6;
       white-space: pre-line;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
-  <div class="image-container">
-    <img src="sister.jpg" alt="Sister">
-    <div class="overlay">
-      <h1>Happy Birthday, Riha 🎉</h1>
-      <p>
+  <h1>Happy Birthday, Riha 🎉</h1>
+  <p>
 Happy birthday, girl, you're the GOAT, no cap, you're the vibe,  
 Always got my back, we’re on those late-night talks.  
 I bet no one knows you like I do, it’s true,  
@@ -76,8 +57,10 @@ You’re always the star I admire, lighting up the view
 Through every laugh and tear, I’ll always ride,  
 Sisterhood’s forever, right here by your side. ✨​  
 Love you as always, I do!  
-      </p>
-    </div>
+  </p>
+
+  <div class="gallery">
+    <img src="sister.jpg" alt="Riha">
   </div>
 </body>
 </html>
